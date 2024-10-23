@@ -10,3 +10,4 @@ PSQL="psql -X --username=freecodecamp --dbname=students --no-align --tuples-only
 # first and last names of students with gpa = 4
 echo -e "\nFirst name, last name, and GPA of students with a 4.0 GPA:"
 echo "$($PSQL "SELECT first_name, last_name, gpa FROM students WHERE gpa = 4.0")"
+
